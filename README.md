@@ -5,7 +5,8 @@ This repository contains data warehouse for "Feeding kids in kindergarten's cant
 
 ## Data Warehouse design
 
-![Multidimensional ERD Final](https://github.com/janekludwicki/Kindergarten_Data_Warehouse_Project/assets/132893147/02726ab1-9ba9-428a-befe-2d5c8b3fc948)
+![DataWarehouseERDDiagram](https://github.com/janekludwicki/Kindergarten_Data_Warehouse_Project/assets/132893147/73c38959-0c77-4216-a2d4-53e75df636bf)
+
 
 <i> Ingredients Management, Eating a meal and Meal Serving are fact tables </i>
 

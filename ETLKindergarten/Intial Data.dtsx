@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/15/2023 10:01:24 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-FGVUVT0"
+  DTS:CreatorName="DESKTOP-FGVUVT0\janek"
+  DTS:DTSID="{F3F94EFD-0239-45D3-8C2F-29DF23664BF2}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{22E4E5C6-B1A4-4A5D-9847-D248ABF9B6B7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-FGVUVT0.KindergartenDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DB5D003A-2166-4542-B46D-F54C087E653D}"
+      DTS:ObjectName="DESKTOP-FGVUVT0.KindergartenDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-JMOOPC1;Initial Catalog=KindergartenDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{DB5D003A-2166-4542-B46D-F54C087E653D}DESKTOP-FGVUVT0.KindergartenDW;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ETL_Kindergarten.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{93BE43CE-E9D0-4BDC-81B8-72E240DA9134}"
+      DTS:ObjectName="ETL_Kindergarten.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\MAC JANEK\Downloads\ETL Kindergarten\ETL_Kindergarten.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Inserting into Date"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9e748f06-10c6-4d3a-8cb2-73d49b683ddb}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Inserting into Date"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB5D003A-2166-4542-B46D-F54C087E653D}"
+          SQLTask:SqlStatementSource="Declare @StartDate date; &#xA;Declare @EndDate date;&#xA;&#xA;-- Step b:  Fill the variable with values for the range of years needed&#xA;SELECT @StartDate = '2019-01-01', @EndDate = '2023-12-31';&#xA;&#xA;-- Step c:  Use a while loop to add dates to the table&#xA;Declare @DateInProcess datetime = @StartDate;&#xA;&#xA;While @DateInProcess &lt;= @EndDate&#xA;&#x9;Begin&#xA;&#x9;--Add a row into the date dimension table for this date&#xA;&#x9;&#x9;Insert Into [dbo].[Date] &#xA;&#x9;&#x9;( [Date]&#xA;&#x9;&#x9;, [Year]&#xA;&#x9;&#x9;, [Month]&#xA;&#x9;&#x9;, [Weekday]&#xA;&#x9;&#x9;, [MonthNo]&#xA;&#x9;&#x9;, [WeekdayNo]&#xA;&#x9;&#x9;, [Season]&#xA;&#x9;&#x9;)&#xA;&#x9;&#x9;Values ( &#xA;&#x9;&#x9;  @DateInProcess -- [Date]&#xA;&#x9;&#x9;  , Cast( Year(@DateInProcess) as varchar(4)) -- [Year]&#xA;&#x9;&#x9;  , Cast( DATENAME(month, @DateInProcess) as varchar(10)) -- [Month]&#xA;&#x9;&#x9;  , Cast( DATENAME(dw,@DateInProcess) as varchar(15)) -- [Weekday]&#xA;&#x9;&#x9;  , Cast( Month(@DateInProcess) as int) -- [MonthNo]&#xA;&#x9;&#x9;  , Cast( DATEPART(dw, @DateInProcess) as int) -- [WeekdayNo]&#xA;&#x9;&#x9;  , CASE&#xA;&#x9;&#x9;&#x9;&#x9;when month(@DateInProcess) in (12, 1, 2) then 'Winter'&#xA;&#x9;&#x9;&#x9;&#x9;when month(@DateInProcess) in (3, 4, 5) then 'Spring'&#xA;&#x9;&#x9;&#x9;&#x9;when month(@DateInProcess) in (6, 7, 8) then 'Summer'&#xA;&#x9;&#x9;&#x9;&#x9;when month(@DateInProcess) in (9, 10, 11) then 'Autumn'&#xA;&#x9;&#x9;&#x9;END&#xA;&#x9;&#x9;);  &#xA;&#x9;&#x9;-- Add a day and loop again&#xA;&#x9;&#x9;Set @DateInProcess = DateAdd(d, 1, @DateInProcess);&#xA;&#x9;End&#xA;go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Inserting into Kindergarten"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E953FFCB-B1B3-4DB6-BC8E-B0CAF5A2CBCD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Inserting into Kindergarten"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DB5D003A-2166-4542-B46D-F54C087E653D}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="ETL_Kindergarten.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="167.5,42"
+          Id="Package\Inserting into Date"
+          TopLeft="98,111.5" />
+        <NodeLayout
+          Size="206,42"
+          Id="Package\Inserting into Kindergarten"
+          TopLeft="353.5,113" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,123 @@
+--Compare the number of children in the school canteen between months.
+
+SELECT
+NON EMPTY [Measures].[Eating a Meal Count] ON COLUMNS,
+NON EMPTY [Date].[Month].children ON ROWS
+FROM [Kindergarten DW]
+
+--Compare the number of meals eaten by every kid to his age.
+
+SELECT
+NON EMPTY [Measures].[Eating a Meal Count] ON COLUMNS,
+NON EMPTY [Student].[StudentHierarchy].[Age Category] ON ROWS
+FROM [Kindergarten DW]
+
+--Compare the number of meals sold of different types in an analyzed month relative to the previous month.
+
+SELECT
+NON EMPTY {
+	[Date].[DateHierarchy].[Year].&[2021].&[Spring].&[May], 
+	[Date].[DateHierarchy].[Year].&[2021].&[Summer].&[June]
+} ON ROWS,
+NON EMPTY [Measures].[Eating a meal count] ON COLUMNS
+FROM [Kindergarten DW]
+
+--What is the difference of children eating in school between the seasons?
+
+SELECT
+NON EMPTY [Date].[Season].children ON ROWS,
+NON EMPTY [Measures].[Eating a meal count] ON COLUMNS
+FROM [Kindergarten DW]
+
+--Compare the number of children between weekdays.
+
+SELECT
+NON EMPTY [Date].[Weekday].children ON ROWS,
+NON EMPTY [Measures].[Eating a meal count] ON COLUMNS
+FROM [Kindergarten DW]
+
+--Compare the number of kids eating annually in relation to kindergarten size, defined as the number of kids attending kindergarten.
+
+SELECT
+NON EMPTY(
+	[Kindergarten].[No Of Students Attending Category].children, 
+	[Date].[DateHierarchy].[Year] 
+	) ON ROWS,
+NON EMPTY [Measures].[Eating a meal count] ON COLUMNS
+FROM [Kindergarten DW]
+
+
+--What are the differences in the number of children between months?
+
+SELECT
+NON EMPTY [Kindergarten].[No Of Students Attending Category].[No Of Students Attending Category] ON COLUMNS,
+NON EMPTY [Date].[Month].children ON ROWS
+FROM [Kindergarten DW]
+
+--Which meals cause a higher amount of food wasted than on average?
+
+WITH Member [Measures].[MyAvg] AS 
+AVG(
+	[Meal].[First Course].children,
+	[Measures].[Amount Of Food Wasted]
+	)
+
+SELECT
+[Measures].[Amount Of Food Wasted] ON COLUMNS,
+FILTER( 
+	{([Meal].[First Course].children, [Meal].[Second Course].children)}, 
+	[Measures].[Amount Of Food Wasted] > [Measures].[MyAvg] )
+		ON ROWS
+FROM [Kindergarten DW]
+
+--Compare the number of meals served the day before and the number of food wasted in that day?
+
+SELECT
+NON EMPTY {
+	[Measures].[Amount Of Food Wasted],
+	[Measures].[Nr Of Meals Served]
+	} ON COLUMNS,
+NON EMPTY [Date].[Date].[Date] ON ROWS
+FROM [Kindergarten DW]
+
+--Compare the number of money invested to buy products daily to amount of food thrown out.
+
+SELECT
+NON EMPTY {
+	[Measures].[Amount Of Money Invested],
+	[Measures].[Amount Of Food Wasted]
+	} ON COLUMNS,
+NON EMPTY [Date].[Date].children ON ROWS
+FROM [Kindergarten DW]
+
+--Compare the effect of the popularity of meal to the amount of food wasted.
+
+SELECT
+NON EMPTY [Measures].[Amount Of Food Wasted] ON COLUMNS,
+NON	EMPTY [Meal].[First Course].children ON ROWS
+FROM [Kindergarten DW]
+
+--Additional queries not listed in Requirements:
+
+--List ten months where there was the highest amount of food bought
+
+SELECT
+NON EMPTY (
+	[Measures].[Amount Of Food Bought],
+	[Date].[Year].children
+	) ON COLUMNS,
+TOPCOUNT (
+	[Date].[DateHierarchy].[Month],
+	10,
+	[Measures].[Amount Of Food Bought]
+	) ON ROWS
+FROM [Kindergarten DW]
+
+--What was the amount of food bought in every month of 2020?
+
+SELECT
+NON EMPTY [Measures].[Amount Of Food Bought] ON COLUMNS,
+NON EMPTY [Date].[Month].children ON ROWS
+FROM [Kindergarten Dw] WHERE
+	([Date].[Year].&[2020])
+

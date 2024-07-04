@@ -1,0 +1,612 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e218a084-92ff-47d6-979b-7f79d9e9b7a2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kindergarten DW</ID>
+  <Name>KindergartenDW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7383" scrolltop="-417" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="15214" y="16854" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01010000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="6688" top="0" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Date" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Meal" left="12784" top="7877" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="3069" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Meal" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Student" left="20" top="9594" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="3572" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000f40d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Student" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Eating_a_meal" left="192" top="5315" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3228" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009c0c000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Eating_a_meal" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Kindergarten" left="5992" top="13638" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="5292" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ac14000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Kindergarten" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Meal_serving" left="5992" top="6819" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="4392" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00002811000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Meal_serving" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6689" top="3920" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__MealS__093F5D4E]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7088" y="4419" />
+              <point x="7088" y="6819" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10084" top="8079" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__Meal___075714DC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="10" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12784" y="8478" />
+              <point x="10384" y="8478" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6039" top="10938" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__Kinde__084B3915]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="0" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6438" y="13638" />
+              <point x="6438" y="12438" />
+              <point x="6538" y="12438" />
+              <point x="6538" y="11238" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="307" top="6894" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Eating_a___Stude__0D0FEE32]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="706" y="9594" />
+              <point x="706" y="7194" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3120" top="6504" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="3172" height="1274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Eating_a___MealS__0C1BC9F9]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="14" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5992" y="7378" />
+              <point x="4706" y="7378" />
+              <point x="4706" y="6804" />
+              <point x="3420" y="6804" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7383</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-417</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="dcd6d034-4af1-4cb4-9694-1477c009dc63">
+      <ID>Meal Serving</ID>
+      <Name>Meal Serving</Name>
+      <DimensionID>Meal Serving</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="dd194ab6-ef36-4fca-8918-045e2c8cea32">
+          <AttributeID>Meal Serving ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de3437ff-633a-400d-a42f-dffb2137db90">
+          <AttributeID>Meal ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6a60248-840e-4c7a-9fe1-d9105b3d43bc">
+          <AttributeID>Kindergarten ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dcfdec50-bc02-4b23-9fa1-2206e01fe074">
+          <AttributeID>Meal Serving Date ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="37732cb6-016c-4985-b100-1c59e8c4626c">
+      <ID>Meal</ID>
+      <Name>Meal</Name>
+      <DimensionID>Meal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f25d3434-3e02-4b3c-889e-8f269d7fbed5">
+          <AttributeID>Meal ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a0ffbb13-0748-4c92-b15a-3384e6139835">
+          <AttributeID>First Course</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="051b780e-5e9c-491a-9079-665df36675a6">
+          <AttributeID>Second Course</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2dd0c357-56a0-48d4-81b2-278b7f13acea">
+      <ID>Kindergarten</ID>
+      <Name>Kindergarten</Name>
+      <DimensionID>Kindergarten</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6de75413-a877-4809-af73-43cfba7ba68d">
+          <AttributeID>Kindergarten ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="77b62059-f8b8-42ca-9903-d806f30f20e8">
+          <AttributeID>No Of Students Attending Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f4a3bc05-070a-45b4-8b65-941fbb28c972">
+      <ID>Student</ID>
+      <Name>Student</Name>
+      <DimensionID>Student</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="61162870-afd2-4c7e-882f-38e08ff8dad2">
+          <AttributeID>Student ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="107e96f4-54dc-491a-ae14-c9931f5a2cee">
+          <AttributeID>PESEL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38160a8a-28d1-45c9-afb9-6eb6f503e875">
+          <AttributeID>Is Current</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d9cd5e8-6e80-4dc2-b88c-da4030851b68">
+          <AttributeID>Name And Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="75f268ca-dc32-45ba-b428-c5dbafad0e68">
+          <AttributeID>Age Category</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2fddba01-acea-42b1-a4ac-5852fc71ca9a">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="96d31bb9-9cac-4844-b8cf-e6e4f5c50773">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="277de4b6-5c36-4987-a07c-0245a9a8113b">
+          <AttributeID>Date ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="acbb3ea9-8457-4937-851e-099eb0ccb490">
+          <AttributeID>Month No</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="b3b05c42-2b6c-41a6-b057-e2cda4a94cc2">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="420cddd0-6d91-4daa-b12e-03bc94cef3e3">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9bcbbb57-4ab8-48de-96aa-39e57e555723">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="35ba1cfa-b75c-4c47-9d0f-3527d9741bbf">
+          <AttributeID>Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="923b9ac8-feda-4cf1-995f-3c6e9ceafcbc">
+          <AttributeID>Weekday No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3de53514-a0a5-47fa-aca8-dfe129bb98d8">
+          <AttributeID>Season</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="43eaae69-9446-4c5f-a395-bc8296c158ee">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="8f58def8-81f9-47da-af7b-5f4902c5da15">
+      <ID>Meal Serving</ID>
+      <Name>Meal Serving</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="52638035-5383-49ac-8953-332f5a3b56f9">
+          <ID>Nr Of Meals Served</ID>
+          <Name>Nr Of Meals Served</Name>
+          <Source dwd:design-time-name="1bd51104-4e9a-4e25-ad00-daf6633b98cc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cac5eb66-09be-48ca-9d4d-a252cf864520">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>NrOfMealsServed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="77a5e5dd-50ba-42a5-bc30-61171bb34d89">
+          <ID>Amount Of Food Wasted</ID>
+          <Name>Amount Of Food Wasted</Name>
+          <Source dwd:design-time-name="967f0d97-a7e8-4cc4-a10f-b248827c8aa6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6ebc090c-c18e-4150-bf4b-16ff36ebbdef">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfFoodWasted</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0fe50531-6877-4f8a-9be8-e9a58ad14b69">
+          <ID>Amount Of Money Invested</ID>
+          <Name>Amount Of Money Invested</Name>
+          <Source dwd:design-time-name="bc0a8072-8acc-43f6-81ba-b9194ed939b2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d2a1a836-187d-4c6b-ac8f-95faf1532522">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfMoneyInvested</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4045f38f-bc05-4873-9bfc-e411730b1279">
+          <ID>Amount Of Food Bought</ID>
+          <Name>Amount Of Food Bought</Name>
+          <Source dwd:design-time-name="057ad75d-4cf4-46f3-85e1-2fb9e8496831">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5110fc53-236a-4111-a0f9-912ad823540a">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfFoodBought</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="20602525-4225-400e-b9b6-993beec348e4">
+          <ID>Meal Serving Count</ID>
+          <Name>Meal Serving Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ec614f15-78ed-47e7-bd64-acb263a440f7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9caad89c-748b-48fe-9dbb-578805f205e2">
+              <TableID>dbo_Meal_serving</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="6f4f51da-5c1d-491e-88a0-8dd703bc18cf">
+          <CubeDimensionID>Meal Serving</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4026d3db-c47d-423c-92ba-26f6d27f09e9">
+              <AttributeID>Meal Serving ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9e99226-5750-4275-a6a2-7cf669ef394e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c0b37cd-da86-4b92-9d02-3143bc65fa7a">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>MealServing_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e1a3a801-2ca9-4b37-b4c6-3e0841bb171f">
+          <CubeDimensionID>Meal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="34eca312-4cfc-47e8-aa06-c50ca02d597a">
+              <AttributeID>Meal ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b61491e8-f32c-4335-ae1c-b2054cacabe6">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7ceb77ef-200f-44de-a055-4d93f1d175b0">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>Meal_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4c380534-7c4b-4cc8-a453-f975ac0fb226">
+          <CubeDimensionID>Kindergarten</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aed7f60c-5bf7-41b2-bdae-79d3fa9be62e">
+              <AttributeID>Kindergarten ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="acf9f1fb-f7b9-41dc-90b3-2706ed18b2f5">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8ba7ac6-18f6-4fa0-b071-b431b4102a90">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>Kindergarten_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="be30bd54-ab4e-487f-9582-773389037116">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b91fba40-ddba-4889-9fc9-4509fe47e969">
+              <AttributeID>Date ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="44728d47-e456-48f1-b24a-b25c1925ef75">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="574279f5-3d25-4310-a304-4a7f281cd5b5">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>MealServingDate_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="b5e2e1f0-3d88-4784-9cf5-f42ad7b0db7e">
+          <CubeDimensionID>Student</CubeDimensionID>
+          <MeasureGroupID>Eating a Meal</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8e8f13de-5366-4bd5-aa0a-396afd4110e6">
+      <ID>Eating a Meal</ID>
+      <Name>Eating a Meal</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="13acbed6-8ad3-495d-ba8d-9e9482740f73">
+          <ID>Eating a Meal Count</ID>
+          <Name>Eating a Meal Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ab19a495-b5c1-40e8-9176-2792379eaf3a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c142ad9a-42e1-4a79-b1b8-1bd22a946dff">
+              <TableID>dbo_Eating_a_meal</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ddb82705-20e3-4bb6-8176-53096f96c814">
+          <CubeDimensionID>Meal Serving</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="73da3325-973f-4957-a031-1af78fa7a4b3">
+              <AttributeID>Meal Serving ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fa81cc01-54c4-4094-98c6-2d8988d58e59">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1c73c1d3-4cbc-4aee-89f9-c659214aed57">
+                    <TableID>dbo_Eating_a_meal</TableID>
+                    <ColumnID>MealServing_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40a59b18-41fd-400c-8e7a-e4db75e7826a">
+          <CubeDimensionID>Student</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fe58a6d9-a986-4ddf-ae75-44ea87b214a9">
+              <AttributeID>Student ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="485f340a-a5e2-477d-888d-9a5ab05379d0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0c8d0adb-05e3-4d2c-9a3c-db1b46c32bdc">
+                    <TableID>dbo_Eating_a_meal</TableID>
+                    <ColumnID>Student_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="f098abf6-0507-48ca-8c3c-77109dc7b188">
+          <CubeDimensionID>Meal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="56b71577-6de9-48a5-a7e2-6c68704507b1">
+              <AttributeID>Meal ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Meal ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="34de7a79-53f5-4ad5-a0b8-2a2e49f0ae4a">
+          <CubeDimensionID>Kindergarten</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a4748c6-f827-4fcf-8a70-01c129c468fc">
+              <AttributeID>Kindergarten ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Kindergarten ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6aba357c-0745-4612-b8b5-8473a67a1c5f">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b1ccb15-feed-4ab9-ab3b-9a8b160da672">
+              <AttributeID>Date ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Meal Serving Date ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="98ca1682-a327-4d4f-a936-64eae870dfcb">
+    <DataSourceViewID>Kindergarten DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="28ac7624-69c5-49c6-b122-ba27d06ee008">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;  
+CREATE MEMBER CURRENTCUBE.[Measures].Average_food_cost
+ AS [AmountOfMoneyInvested]/[AmountOfFoodBought], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Meal Serving'  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

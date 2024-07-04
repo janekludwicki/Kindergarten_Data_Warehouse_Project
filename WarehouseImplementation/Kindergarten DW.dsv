@@ -1,0 +1,384 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="29859cb7-77a9-4e05-95ea-80e7e6aa467c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kindergarten DW</ID>
+  <Name>Kindergarten DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="17" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="52" scrolltop="-590" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="85" x="15743" y="15002" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date" left="6688" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Date" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Eating_a_meal" left="192" top="5315" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3228" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00009c0c000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Eating_a_meal" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Kindergarten" left="12784" top="8089" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="5292" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000ac14000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Kindergarten" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Meal_serving" left="5992" top="6819" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="4392" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e00002811000043110000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Meal_serving" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Meal" left="6653" top="13638" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3069" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Meal" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Student" left="20" top="9594" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3572" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000e0000f40d00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Student" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="10084" top="8079" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__Kinde__72C60C4A]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="18" destattachpoint="19" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="12784" y="8478" />
+                    <point x="10384" y="8478" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6689" top="3920" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__MealS__73BA3083]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7088" y="4419" />
+                    <point x="7088" y="6819" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="6688" top="10938" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__Meal_serv__Meal___71D1E811]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7087" y="13638" />
+                    <point x="7087" y="12438" />
+                    <point x="7088" y="12438" />
+                    <point x="7088" y="11238" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="307" top="6894" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__Eating_a___Stude__778AC167]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="2" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="706" y="9594" />
+                    <point x="706" y="7194" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3120" top="6504" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3172" height="1274" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK__Eating_a___MealS__76969D2E]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="14" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5992" y="7378" />
+                    <point x="4706" y="7378" />
+                    <point x="4706" y="6804" />
+                    <point x="3420" y="6804" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>52</DiagramViewPortLeft>
+            <DiagramViewPortTop>-590</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>85</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Kindergarten DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Kindergarten_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Kindergarten_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="ca82c795-8918-43c7-a858-f216f3dcdab9">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Date" msprop:design-time-name="ac8e0f6b-fd5a-4b67-93a6-d464564bd57d" msprop:FriendlyName="Date" msprop:DbSchemaName="dbo" msprop:DbTableName="Date" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0ba4acaf-3c70-4ad4-97a7-4f4b4652b34d" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" type="xs:int" />
+                  <xs:element name="Date" msprop:design-time-name="4b73203b-da44-4fa9-89f7-9b244cf944ba" msprop:DbColumnName="Date" msprop:FriendlyName="Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="d5fb4ebf-c7ae-4e8e-8a1e-beae0c8440e9" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="2d72cf06-0b5f-4d4f-a6df-63d47a5aee10" msprop:DbColumnName="Month" msprop:FriendlyName="Month" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Weekday" msprop:design-time-name="697b2615-19f5-421c-afa9-6474428996a7" msprop:DbColumnName="Weekday" msprop:FriendlyName="Weekday" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthNo" msprop:design-time-name="d1b86394-20c7-444f-9e0f-b9495fd68ebf" msprop:DbColumnName="MonthNo" msprop:FriendlyName="MonthNo" type="xs:int" minOccurs="0" />
+                  <xs:element name="WeekdayNo" msprop:design-time-name="cd182eff-cb83-47e8-bd36-016857eb0326" msprop:DbColumnName="WeekdayNo" msprop:FriendlyName="WeekdayNo" type="xs:int" minOccurs="0" />
+                  <xs:element name="Season" msprop:design-time-name="d7ce3a2b-dafc-4ca7-b1da-125b17f65297" msprop:DbColumnName="Season" msprop:FriendlyName="Season" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Eating_a_meal" msprop:design-time-name="1e1eca82-1987-4dfd-8823-7fc3a3206e50" msprop:FriendlyName="Eating_a_meal" msprop:DbSchemaName="dbo" msprop:DbTableName="Eating_a_meal" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MealServing_ID" msprop:design-time-name="b185a474-eab8-4468-8c68-47a47300b235" msprop:DbColumnName="MealServing_ID" msprop:FriendlyName="MealServing_ID" type="xs:int" />
+                  <xs:element name="Student_ID" msprop:design-time-name="12b3d74c-cfb3-42e2-92e3-284fdc532a7e" msprop:DbColumnName="Student_ID" msprop:FriendlyName="Student_ID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kindergarten" msprop:design-time-name="b0eaab9d-2778-4d68-bd1f-085c09356d5f" msprop:FriendlyName="Kindergarten" msprop:DbSchemaName="dbo" msprop:DbTableName="Kindergarten" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Kindergarten_ID" msprop:design-time-name="f9311d75-cd8a-4164-8b94-1d9493f3f611" msprop:DbColumnName="Kindergarten_ID" msprop:FriendlyName="Kindergarten_ID" type="xs:int" />
+                  <xs:element name="NoOfStudentsAttendingCategory" msprop:design-time-name="2a1f64ea-7f26-4106-807b-90ab47055cde" msprop:DbColumnName="NoOfStudentsAttendingCategory" msprop:FriendlyName="NoOfStudentsAttendingCategory" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Meal_serving" msprop:design-time-name="855f798d-f9e3-427c-9653-cc3e8376c6f3" msprop:FriendlyName="Meal_serving" msprop:DbSchemaName="dbo" msprop:DbTableName="Meal_serving" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MealServing_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2b36b712-5f5d-4688-9394-8c824198564c" msprop:DbColumnName="MealServing_ID" msprop:FriendlyName="MealServing_ID" type="xs:int" />
+                  <xs:element name="Meal_ID" msprop:design-time-name="b8258ebb-a254-4b64-ab75-7ba20eab50a1" msprop:DbColumnName="Meal_ID" msprop:FriendlyName="Meal_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="Kindergarten_ID" msprop:design-time-name="1dc07ff7-46bf-4d0d-9f49-8c0074c85d44" msprop:DbColumnName="Kindergarten_ID" msprop:FriendlyName="Kindergarten_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="MealServingDate_ID" msprop:design-time-name="fc55fb0b-ac3b-4375-814e-92921beaef3d" msprop:DbColumnName="MealServingDate_ID" msprop:FriendlyName="MealServingDate_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="NrOfMealsServed" msprop:design-time-name="eb5a9142-8d1a-41d6-9b1a-61904d317e85" msprop:DbColumnName="NrOfMealsServed" msprop:FriendlyName="NrOfMealsServed" type="xs:int" minOccurs="0" />
+                  <xs:element name="AmountOfFoodWasted" msprop:design-time-name="8dc05dc4-fecc-4aee-b3de-5913e9e8145b" msprop:DbColumnName="AmountOfFoodWasted" msprop:FriendlyName="AmountOfFoodWasted" type="xs:int" minOccurs="0" />
+                  <xs:element name="AmountOfMoneyInvested" msprop:design-time-name="d26d8bfe-5993-4dcd-b481-9ace361cb1e1" msprop:DbColumnName="AmountOfMoneyInvested" msprop:FriendlyName="AmountOfMoneyInvested" type="xs:int" minOccurs="0" />
+                  <xs:element name="AmountOfFoodBought" msprop:design-time-name="f700fca7-4d43-4717-8346-0219ce566007" msprop:DbColumnName="AmountOfFoodBought" msprop:FriendlyName="AmountOfFoodBought" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Meal" msprop:design-time-name="ad51df8f-37d1-480b-9408-72d045498425" msprop:FriendlyName="Meal" msprop:DbSchemaName="dbo" msprop:DbTableName="Meal" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Meal_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="47787a51-1763-4299-a4bf-a553ba9d9d0e" msprop:DbColumnName="Meal_ID" msprop:FriendlyName="Meal_ID" type="xs:int" />
+                  <xs:element name="FirstCourse" msprop:design-time-name="91150ed0-7f3b-4bf8-905c-a1791d2150f6" msprop:DbColumnName="FirstCourse" msprop:FriendlyName="FirstCourse" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SecondCourse" msprop:design-time-name="02421915-c2f2-46da-b9a2-adf48adb31da" msprop:DbColumnName="SecondCourse" msprop:FriendlyName="SecondCourse" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Student" msprop:design-time-name="3ebde273-6122-44a8-a9c9-99d12bfe8caa" msprop:FriendlyName="Student" msprop:DbSchemaName="dbo" msprop:DbTableName="Student" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Student_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="330f5875-020a-479e-b546-a8158d710e93" msprop:DbColumnName="Student_ID" msprop:FriendlyName="Student_ID" type="xs:int" />
+                  <xs:element name="PESEL" msprop:design-time-name="03e2dc10-8406-43d8-bf20-aff34856d7f3" msprop:DbColumnName="PESEL" msprop:FriendlyName="PESEL" type="xs:long" minOccurs="0" />
+                  <xs:element name="IsCurrent" msprop:design-time-name="3a55a11c-90d6-481d-9219-d9584a5d7227" msprop:DbColumnName="IsCurrent" msprop:FriendlyName="IsCurrent" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="NameAndSurname" msprop:design-time-name="ca0a0073-dc55-404b-8739-5e3fec345985" msprop:DbColumnName="NameAndSurname" msprop:FriendlyName="NameAndSurname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AgeCategory" msprop:design-time-name="2a630c39-13f5-417e-aa79-3fd92ae047b7" msprop:DbColumnName="AgeCategory" msprop:FriendlyName="AgeCategory" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Eating_a_meal_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Eating_a_meal" />
+          <xs:field xpath="MealServing_ID" />
+          <xs:field xpath="Student_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Kindergarten_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kindergarten" />
+          <xs:field xpath="Kindergarten_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Meal_serving_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Meal_serving" />
+          <xs:field xpath="MealServing_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Meal_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Meal" />
+          <xs:field xpath="Meal_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Student_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Student" />
+          <xs:field xpath="Student_ID" />
+        </xs:unique>
+        <xs:keyref name="FK__Meal_serv__Meal___71D1E811" refer="dbo_Meal_Constraint1">
+          <xs:selector xpath=".//dbo_Meal_serving" />
+          <xs:field xpath="Meal_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Meal_serv__MealS__73BA3083" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Meal_serving" />
+          <xs:field xpath="MealServingDate_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Meal_serv__Kinde__72C60C4A" refer="dbo_Kindergarten_Constraint1">
+          <xs:selector xpath=".//dbo_Meal_serving" />
+          <xs:field xpath="Kindergarten_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Eating_a___MealS__76969D2E" refer="dbo_Meal_serving_Constraint1">
+          <xs:selector xpath=".//dbo_Eating_a_meal" />
+          <xs:field xpath="MealServing_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK__Eating_a___Stude__778AC167" refer="dbo_Student_Constraint1">
+          <xs:selector xpath=".//dbo_Eating_a_meal" />
+          <xs:field xpath="Student_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Kindergarten_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

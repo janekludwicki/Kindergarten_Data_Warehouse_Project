@@ -1,0 +1,416 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9a4c0f55-b0a5-4c12-b129-eafdf2862c5a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>KindergartenDW 1</ID>
+  <Name>KindergartenDW 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="c1023381-5ebb-4bc6-849c-c166256f2f5d">
+      <ID>Meal Serving</ID>
+      <Name>Meal Serving</Name>
+      <DimensionID>Meal Serving</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="11fbb6a4-731c-47fe-97a8-4fd54c38454d">
+          <AttributeID>Meal Serving ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8dd3214e-a213-4312-8afd-7a5f01925851">
+          <AttributeID>Meal ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1898e4f7-9546-41cd-a153-bc2f586322a2">
+          <AttributeID>Kindergarten ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b755112-8647-4c36-b294-f7e2cba28236">
+          <AttributeID>Meal Serving Date ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="308ec406-9c35-4c56-af36-b2b7b7838c9a">
+      <ID>Student</ID>
+      <Name>Student</Name>
+      <DimensionID>Student</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2f88ecce-c4a8-4191-8ac5-ee29fc938428">
+          <AttributeID>Student ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb17b470-3ba6-4789-82b7-fb609cc32ecc">
+          <AttributeID>PESEL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38c30371-459a-4807-9edd-7667ac1ed3a6">
+          <AttributeID>Is Current</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e482c957-feac-46b0-b3f8-d0754642461a">
+          <AttributeID>Name And Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fcef9b88-73c3-4a35-836d-9f4edb576ee1">
+          <AttributeID>Age Category</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="f5a40ef9-be03-42c3-9d7b-1d8ae2199164">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c7494702-a3a9-4664-8cf3-1bc4c91d3bb9">
+      <ID>Kindergarten</ID>
+      <Name>Kindergarten</Name>
+      <DimensionID>Kindergarten</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="174d7ea9-bb29-4e83-91d4-5787aa825296">
+          <AttributeID>Kindergarten ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83fa4619-8e50-41e2-8a9f-50c4ea9c5884">
+          <AttributeID>No Of Students Attending Category</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b73d6c72-dd50-4810-a6cd-6d33736e23d2">
+      <ID>Meal</ID>
+      <Name>Meal</Name>
+      <DimensionID>Meal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a96958f9-8b7d-459b-a7b9-a8308776905c">
+          <AttributeID>Meal ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a65da5a-8488-464d-963e-c48e42405360">
+          <AttributeID>First Course</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b02e9f97-be52-4eb7-a6ed-c8ad558969a4">
+          <AttributeID>Second Course</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="92cdae25-c44e-41c6-9db2-f555e36e9722">
+      <ID>Date</ID>
+      <Name>Date</Name>
+      <DimensionID>Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f348707c-e166-40b1-8855-6ee38afa8bb6">
+          <AttributeID>Date ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="da69311a-f1d3-4727-8a9f-432d549d3da5">
+          <AttributeID>Month No</AttributeID>
+          <AttributeHierarchyEnabled>false</AttributeHierarchyEnabled>
+        </Attribute>
+        <Attribute dwd:design-time-name="09dfc0a7-8b18-46fa-a0f5-9d2f06b8a8e7">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aeef2791-47c3-4d2c-b778-20b08e34476c">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e38a8fc9-f272-4945-b2ce-ba64b695948f">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6a739f4-81a2-49e5-9f79-f4409313a799">
+          <AttributeID>Weekday</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6b9a93f-1f5e-4969-8f87-699f132f7b8e">
+          <AttributeID>Weekday No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8161f457-b9b9-41d5-9bb2-a52ab64ea985">
+          <AttributeID>Season</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="3b402f5d-7391-4213-8969-0d737c343382">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="8f07c6ba-8621-4783-8943-7929748c6210">
+      <ID>Eating a Meal</ID>
+      <Name>Eating a Meal</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c327d8ec-93f9-4ae9-a706-887165fc6a87">
+          <ID>Eating a Meal Count</ID>
+          <Name>Eating a Meal Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="76789219-7725-4ed2-be5c-71443b235a7f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="555e576b-b141-47c1-94e9-fc4b3c8fbdb8">
+              <TableID>dbo_Eating_a_meal</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9a05e3ce-eccf-4232-904c-183e997dc53d">
+          <CubeDimensionID>Meal Serving</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9cf071f7-306a-4034-bd39-388ce63138b2">
+              <AttributeID>Meal Serving ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dc2cb65f-5ae5-41cb-b3a3-63b3e052efe8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="635c9e58-24d7-4364-9c36-6cff5bf53e2b">
+                    <TableID>dbo_Eating_a_meal</TableID>
+                    <ColumnID>MealServing_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="26f99df1-6030-48fa-9095-b8c5e3bbccbd">
+          <CubeDimensionID>Student</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="84654aac-6e8b-4c2b-852b-29531c374922">
+              <AttributeID>Student ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="adf8cddd-d707-489f-a3e1-6c957b69ed00">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bd66a9c7-85e4-49d6-b2a9-fc32b8ab0de7">
+                    <TableID>dbo_Eating_a_meal</TableID>
+                    <ColumnID>Student_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="18a22e99-338c-401e-b89c-8c64811df660">
+          <CubeDimensionID>Meal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f176360-b1f7-4e8d-8cb2-9937fc42c96f">
+              <AttributeID>Meal ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Meal ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0fb40a63-a72c-4ae4-961e-1d656784ef2c">
+          <CubeDimensionID>Kindergarten</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dc0c0721-5498-49f3-9df7-7a4314a5e430">
+              <AttributeID>Kindergarten ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Kindergarten ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="70cf0e50-3064-4249-a8cb-129e9dd42b78">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9deee307-8dc9-457c-ade4-8f01981ef749">
+              <AttributeID>Date ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Meal Serving</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Meal Serving Date ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="645b2098-51ff-4826-aee4-aa00b6035efd">
+      <ID>Meal Serving</ID>
+      <Name>Meal Serving</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d007938f-c0cb-400c-b886-40faeef0d12b">
+          <ID>Nr Of Meals Served</ID>
+          <Name>Nr Of Meals Served</Name>
+          <Source dwd:design-time-name="935df367-8f60-466e-8880-54d80138b9bc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6690f969-1ae9-4da3-977d-6902ef8b54fc">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>NrOfMealsServed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d69fb4ad-f7b6-44eb-b8f3-8fd63d7329bb">
+          <ID>Amount Of Food Wasted</ID>
+          <Name>Amount Of Food Wasted</Name>
+          <Source dwd:design-time-name="d8a928c2-7ab4-4a36-92c3-3368d0f4c113">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eefa3f40-f476-4b5a-b853-106efbd2d6e6">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfFoodWasted</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fd9210c0-0c13-4829-bcc9-cd7089332953">
+          <ID>Amount Of Money Invested</ID>
+          <Name>Amount Of Money Invested</Name>
+          <Source dwd:design-time-name="393f2376-a30e-4b3d-9f54-2a537754870b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="44a7033d-8f66-41f5-a27b-e70c30743bb4">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfMoneyInvested</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9ee25645-128a-444d-865c-38096d472e07">
+          <ID>Amount Of Food Bought</ID>
+          <Name>Amount Of Food Bought</Name>
+          <Source dwd:design-time-name="659ff22c-1c68-4fe2-825d-e8a543c484ab">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="33af211e-3a5a-472f-80b8-b7d70b9cb864">
+              <TableID>dbo_Meal_serving</TableID>
+              <ColumnID>AmountOfFoodBought</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0197a4c4-ee08-4f2e-88d5-50f7fa5b0bee">
+          <ID>Meal Serving Count</ID>
+          <Name>Meal Serving Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="88903a80-1155-455e-87ce-be5fe91b49a7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4444ef7a-3d96-4d94-88f8-ddeac9fb22b8">
+              <TableID>dbo_Meal_serving</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="bdc2bc2c-19da-49cd-b2c3-46c4748d9afb">
+          <CubeDimensionID>Meal Serving</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="261534d5-0f3b-4417-86b5-466548e5c9f8">
+              <AttributeID>Meal Serving ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="de5d7e49-973e-42ac-93cf-9ede79919cf6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d6f93927-9fda-41cd-a1ee-2228dd1a8f61">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>MealServing_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d6aaccb6-5d74-464b-847c-d390175e6911">
+          <CubeDimensionID>Kindergarten</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a892dac-03f0-44ae-94e6-97cba7a4b73b">
+              <AttributeID>Kindergarten ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="420bf00b-1550-463a-bfaa-35d7dabb6618">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e0ac44a0-4013-4621-bb29-c5e4ba28c0c7">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>Kindergarten_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="08bdaa87-038d-47c8-9434-b3e71a9303f9">
+          <CubeDimensionID>Meal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="864b940c-bade-4cff-b286-a63f3b12c3a8">
+              <AttributeID>Meal ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f6a05695-248f-4283-9b2a-f76c8714e747">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04dedf41-4694-4908-bf8c-d70289c86635">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>Meal_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ada0053-45a5-4106-8923-89b382589f34">
+          <CubeDimensionID>Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="69939b4d-8114-474f-9024-2cbe3a53f70d">
+              <AttributeID>Date ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce968fad-75a5-4a91-8af7-37a2c2016657">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c8beabd-489e-48b5-b834-76095974d98b">
+                    <TableID>dbo_Meal_serving</TableID>
+                    <ColumnID>MealServingDate_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="820ba188-e423-4239-96f4-4517db5d0526">
+          <CubeDimensionID>Student</CubeDimensionID>
+          <MeasureGroupID>Eating a Meal</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="24398d56-2189-40f8-a7c8-e09cbbe11418">
+    <DataSourceViewID>Kindergarten DW</DataSourceViewID>
+  </Source>
+</Cube>
